@@ -27,6 +27,7 @@ class TableOfContents(object):
     Represents the table of contents for a given page.
     """
     def __init__(self, html):
+        self.toc_html = html.splitlines()[2:-2]
         self.items = _parse_html_table_of_contents(html)
 
     def __iter__(self):

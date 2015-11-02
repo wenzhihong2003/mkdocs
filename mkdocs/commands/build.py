@@ -120,6 +120,7 @@ def get_page_context(page, content, toc, meta, config):
 
         'content': content,
         'toc': toc,
+        'toc_html': ''.join(toc.toc_html),
         'meta': meta,
 
 
